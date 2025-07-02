@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CheapMarket</title>
+  <style>
+    @media screen and (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button.send-btn {
+        width: 100%;
+      }
+      .product button {
+        font-size: 0.95em;
+      }
+      #chatbox {
+        padding: 15px;
+      }
+      .pay-btn a button {
+        width: 100%;
+      }
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0;
+      margin: 0;
+      background: linear-gradient(to right, #000000, #1c1c1c);
+      color: #ffffff;
+    }
+    header {
+      background: #0f0f0f;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      margin: 0;
+      color: #f3ba2f;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #1a1a1a;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    nav a {
+      color: #f3ba2f;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #f3ba2f;
+      margin-bottom: 20px;
+    }
+    #products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: #121212;
+      padding: 20px;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.2s ease-in-out;
+    }
+    .product:hover {
+      transform: scale(1.02);
+    }
+    .product h3 {
+      color: #f3ba2f;
+      margin-top: 0;
+    }
+    .product button {
+      background: #f3ba2f;
+      color: #000;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+      font-weight: bold;
+    }
+    .product button:hover {
+      background: #e0aa00;
+    }
+    #chatbox {
+      background: #111;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+    #messages {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #444;
+      padding: 15px;
+      margin-bottom: 15px;
+      background: #1d1d1d;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .message {
+      margin: 12px 0;
+    }
+    .user {
+      font-weight: bold;
+      color: #ccc;
+    }
+    .ai {
+      color: #00ccff;
+    }
+    input[type="text"] {
+      width: 78%;
+      padding: 12px;
+      border: 1px solid #555;
+      border-radius: 6px;
+      background: #222;
+      color: #fff;
+      font-size: 1em;
+    }
+    button.send-btn {
+      padding: 12px 18px;
+      background: #0066cc;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button.send-btn:hover {
+      background: #0055a4;
+    }
+    .pay-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
+    .pay-btn a button {
+      background: #f3ba2f;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+    .paypal-button-wrapper {
+      display: inline-block;
+    }
+    #uploadForm input, #uploadForm textarea {
+      background: #1b1b1b;
+      color: #fff;
+      border: 1px solid #333;
+    }
+    #uploadForm textarea {
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CheapMarket</h1>
+  </header>
+  <section>
+    <h2>Preview working!</h2>
+    <p>This file loaded correctly. The chat features and JavaScript will work once you upload this site or test using a local web server.</p>
+  </section>
+</body>
+</html>
